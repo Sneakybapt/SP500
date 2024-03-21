@@ -7,6 +7,8 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
         }
         .container {
             text-align: center;
@@ -19,6 +21,13 @@
         }
         h1 {
             font-weight: bold;
+        }
+        /* Pour les iPhones */
+        @media only screen and (max-width: 480px) {
+            .iframe-container {
+                display: block;
+                margin: 10px auto;
+            }
         }
     </style>
 </head>
@@ -44,6 +53,10 @@
         <!-- Cinquième iframe -->
         <div class="iframe-container">
             <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSe6cLdUEmp2VhYcZsUzEFIS3V8dTPw2LaJ7iVmuoJfh34Zp6XZm8-hELtNNmVM2jKMBHzYnL81eJST/pubchart?oid=1338447958&amp;format=interactive"></iframe>
+        </div>
+        <!-- Sixième iframe -->
+        <div class="iframe-container">
+            <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSe6cLdUEmp2VhYcZsUzEFIS3V8dTPw2LaJ7iVmuoJfh34Zp6XZm8-hELtNNmVM2jKMBHzYnL81eJST/pubchart?oid=2082905717&amp;format=interactive"></iframe>
         </div>
     </div>
 </body>
